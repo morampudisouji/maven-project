@@ -16,12 +16,9 @@ pipeline {
             steps {
                 build job: 'Deploy-to-staging'
             }
-          }
-
-        stage ('checkstyle checking'){
-             steps {
+        
+             steps{
                 build job: 'checkstyleMavenProject'  
              } 
-        }
-    }       
+    }       }
 }
