@@ -4,6 +4,7 @@ pipeline {
         stage('Build'){
             steps {
                 build job: 'maven-project'
+                build job: 'firstjob'
             }
         }
         stage ('Deploy to Staging'){
